@@ -138,6 +138,7 @@ a {
   font-weight: 700;
   color: #222222;
   margin-bottom: 19px;
+  letter-spacing: -1px;
 }
 .services__head-description {
   font-family: var(--secondary-heading-font);
@@ -196,4 +197,87 @@ a {
   font-weight: 400;
   letter-spacing: -0.35px;
   color: #777777;
+}
+
+/* contact decorate */
+
+.contact {
+  background-color: #222222;
+  background-image: url(../img/contact_background.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  padding-bottom: 114px;
+  background-position: right bottom 20px;
+}
+
+.contact__head-wrapper {
+  text-align: center;
+  padding-top: 110px;
+}
+.contact__head {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 19px;
+  letter-spacing: -1px;
+}
+.contact__head-description {
+  font-family: var(--secondary-heading-font);
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 80px;
+}
+
+.contact__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact__form-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form-input {
+  height: 50px;
+}
+.contact__form-wrapper li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contact__form-input,
+.contact__form-message {
+  width: 456px;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.35px;
+  font-family: var(--main-font);
+}
+.contact__form-message {
+  padding-top: 19px;
+  height: 210px;
+  resize: none;
+}
+
+.contact__form-input::placeholder,
+.contact__form-message::placeholder {
+  text-transform: uppercase;
+}
+
+.contact__form-btn {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  font-family: var(--main-font);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
