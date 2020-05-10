@@ -78,25 +78,31 @@
             Proin iaculis purus consequat sem cure.
           </p>
         </div>
-        <form action="#" class="contact__form container">
+        <form action="#" method="GET" class="contact__form container">
           <div class="contact__form-wrapper">
             <ul>
               <li>
                 <input
+                  name="user_name"
                   type="text"
                   class="contact__form-input"
-                  placeholder="your Name"
+                  placeholder="your Name *"
+                  required
+                  minlength="2"
                 />
               </li>
               <li>
                 <input
-                  type="text"
+                  name="user_email"
+                  type="email"
                   class="contact__form-input"
-                  placeholder="your e-mail"
+                  placeholder="your e-mail *"
+                  required
                 />
               </li>
               <li>
                 <input
+                  name="user_subject"
                   type="text"
                   class="contact__form-input"
                   placeholder="subject"
@@ -104,13 +110,18 @@
               </li>
             </ul>
             <textarea
-              name=""
+              name="user_message"
               class="contact__form-message"
               placeholder="Your message *"
+              required
+              minlength="5"
+              maxlength="100"
             ></textarea>
           </div>
           <div class="contact__form-btn-wrapper">
-            <button class="contact__form-btn">Send Message</button>
+            <button type="submit" class="contact__form-btn">
+              Send Message
+            </button>
           </div>
         </form>
       </section>

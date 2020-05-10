@@ -124,7 +124,7 @@ a {
 
 /* Services decorate */
 .services {
-  padding-top: 128px;
+  padding-top: 100px;
   padding-bottom: 120px;
 }
 
@@ -137,7 +137,7 @@ a {
   font-family: var(--main-font);
   font-weight: 700;
   color: #222222;
-  margin-bottom: 19px;
+  margin-bottom: 8px;
   letter-spacing: -1px;
 }
 .services__head-description {
@@ -163,7 +163,7 @@ a {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 
 .services__description-list-item {
@@ -212,7 +212,7 @@ a {
 
 .contact__head-wrapper {
   text-align: center;
-  padding-top: 110px;
+  padding-top: 98px;
 }
 .contact__head {
   text-transform: uppercase;
@@ -220,14 +220,14 @@ a {
   font-family: var(--main-font);
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 19px;
+  margin-bottom: 12px;
   letter-spacing: -1px;
 }
 .contact__head-description {
   font-family: var(--secondary-heading-font);
   font-size: 16px;
   color: #777777;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 }
 
 .contact__form-wrapper {
@@ -250,7 +250,7 @@ a {
 .contact__form-input,
 .contact__form-message {
   width: 456px;
-  border: 1px solid #cccccc;
+  border: 2px solid #cccccc;
   padding-left: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -258,19 +258,30 @@ a {
   font-family: var(--main-font);
 }
 .contact__form-message {
-  padding-top: 19px;
+  padding-top: 14px;
   height: 210px;
   resize: none;
 }
-
+.contact__form-input:required:focus,
+.contact__form-message:required:focus {
+  outline: none;
+}
+.contact__form-input:required:focus:valid:not(:placeholder-shown),
+.contact__form-message:required:focus:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+.contact__form-input:required:focus:invalid:not(:placeholder-shown),
+.contact__form-message:required:focus:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
 .contact__form-input::placeholder,
 .contact__form-message::placeholder {
   text-transform: uppercase;
 }
 
 .contact__form-btn {
-  width: 240px;
-  height: 66px;
+  width: 242px;
+  height: 68px;
   background-color: #fed136;
   font-family: var(--main-font);
   color: #ffffff;
